@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조상일 커피 - 국제 대회 수상 바리스타의 프리미엄 스페셜티 커피</title>
+    <meta name="description" content="2023 엘살바도르 핸드드립 챔피언십 준우승. 12년 경력, 대기업 128회 교육. 매주 새로운 스페셜티 원두와 세상에 없던 드립에센스.">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background: #fff;
+        }
+        
+        /* 고정 헤더 */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            padding: 15px 20px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            color: #0F4C81;
+            letter-spacing: -0.5px;
+        }
+        
+        .header-cta {
+            background: linear-gradient(135deg, #0F4C81 0%, #0a3557 100%);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(15, 76, 129, 0.3);
+        }
+        
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(15, 76, 129, 0.4);
+        }
+        
+        /* 히어로 섹션 */
+        .hero {
+            background: linear-gradient(rgba(15, 76, 129, 0.9), rgba(26, 95, 158, 0.9)), 
+                        url('images/workspace_roasting.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 140px 20px 100px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+            opacity: 0.5;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            animation: fadeInDown 0.8s;
+        }
+        
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.3;
+            margin-bottom: 25px;
+            font-weight: 900;
+            animation: fadeInUp 0.8s;
+            letter-spacing: -1px;
+        }
+        
+        .hero h1 span {
+            display: block;
+            font-size: 58px;
+            margin-top: 10px;
+            color: #FFD700;
+            text-shadow: 0 2px 20px rgba(255, 215, 0, 0.5);
+        }
+        
+        .hero-subtitle {
+            font-size: 22px;
+            line-height: 1.7;
+            margin-bottom: 45px;
+            opacity: 0.95;
+            animation: fadeInUp 1s;
+            font-weight: 400;
+        }
+        
+        .hero-cta-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1.2s;
+        }
+        
+        .cta-button {
+            padding: 20px 45px;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .cta-primary {
+            background: white;
+            color: #0F4C81;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cta-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 2px solid white;
+            backdrop-filter: blur(10px);
+        }
+        
+        .cta-secondary:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+        
+        /* PROBLEM 섹션 */
+        .section {
+            padding: 90px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .problem-section {
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0F4C81;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 60px;
+            line-height: 1.6;
+        }
+        
+        .problem-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .problem-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            border-left: 5px solid #0F4C81;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 35px rgba(15, 76, 129, 0.15);
+        }
+        
+        .problem-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .problem-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #0F4C81;
+            font-weight: 700;
+        }
+        
+        .problem-card p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        /* AGITATION 섹션 */
+        .agitation-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+            color: white;
+        }
+        
+        .agitation-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .agitation-section .section-title {
+            color: white;
+        }
+        
+        .agitation-section .section-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .agitation-list {
+            margin: 50px 0;
+        }
+        
+        .agitation-item {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #FFD700;
+            transition: all 0.3s;
+        }
+        
+        .agitation-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(5px);
+        }
+        
+        .agitation-item strong {
+            color: #FFD700;
+            font-size: 22px;
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        
+        .agitation-item p {
+            font-size: 17px;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        /* SOLUTION 섹션 */
+        .solution-section {
+            background: white;
+        }
+        
+        .solution-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 20px;
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        /* 대표님 프로필 */
+        .profile-section {
+            text-align: center;
+            margin: 50px 0 60px;
+        }
+        
+        .profile-image {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #0F4C81;
+            box-shadow: 0 10px 40px rgba(15, 76, 129, 0.3);
+            margin-bottom: 25px;
+        }
+        
+        .profile-name {
+            font-size: 32px;
+            font-weight: 900;
+            color: #0F4C81;
+            margin-bottom: 15px;
+        }
+        
+        .profile-title {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .credentials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .credential-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .credential-card:hover {
+            transform: translateY(-8px);
+            border-color: #0F4C81;
+            box-shadow: 0 10px 30px rgba(15, 76, 129, 0.2);
+        }
+        
+        .credential-icon {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+        
+        .credential-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: #0F4C81;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .credential-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #2c2c2c;
+            font-weight: 700;
+        }
+        
+        .credential-card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* 수상 갤러리 */
+        .award-gallery {
+            margin-top: 60px;
+        }
+        
+        .award-gallery h3 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #0F4C81;
+            font-weight: 900;
+        }
+        
+        .award-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .award-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+        
+        .award-image:hover {
+            transform: scale(1.05);
+        }
+        
+        /* 드립에센스 특별 섹션 */
+        .drip-essence-section {
+            background: linear-gradient(135deg, #0F4C81 0%, #1a5f9e 100%);
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .drip-essence-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        .drip-essence-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .drip-essence-text h2 {
+            font-size: 48px;
+            margin-bottom: 25px;
+            font-weight: 900;
+            color: #FFD700;
+            letter-spacing: -1px;
+        }
+        
+        .drip-essence-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .drip-essence-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+        
+        .drip-essence-features {
+            display: grid;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .drip-feature {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #FFD700;
+        }
+        
+        .drip-feature strong {
+            font-size: 20px;
+            display: block;
+            margin-bottom: 8px;
+            color: #FFD700;
+        }
+        
+        .drip-essence-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+        }
+        
+        .time-philosophy {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            margin-top: 40px;
+        }
+        
+        .time-philosophy h4 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            text-align: center;
+            color: #FFD700;
+            font-weight: 700;
+        }
+        
+        .time-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .time-item {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .time-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .time-label {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #FFD700;
+        }
+        
+        .time-name {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        /* OFFER 섹션 */
+        .offer-section {
+            background: #f8f9fa;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 25px;
+            padding: 45px;
+            text-align: center;
+            transition: all 0.4s;
+            position: relative;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border: 3px solid transparent;
+        }
+        
+        .product-card:hover {
+            border-color: #0F4C81;
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(15, 76, 129, 0.2);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            color: #1a1a1a;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 900;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+        
+        .product-image {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 15px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .product-card h3 {
+            font-size: 30px;
+            margin: 20px 0;
+            color: #0F4C81;
+            font-weight: 900;
+        }
+        
+        .product-card .price {
+            font-size: 22px;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        
+        .product-card .price strong {
+            font-size: 32px;
+            color: #0F4C81;
+            font-weight: 900;
+        }
+        
+        .product-features {
+            text-align: left;
+            margin: 30px 0;
+            list-style: none;
+        }
+        
+        .product-features li {
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 16px;
+            color: #444;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .product-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0F4C81;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .product-button {
+            background: linear-gradient(135deg, #0F4C81 0%, #0a3557 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 25px;
+            font-weight: 700;
+            font-size: 17px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(15, 76, 129, 0.3);
+        }
+        
+        .product-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(15, 76, 129, 0.4);
+        }
+        
+        /* 고객 후기 섹션 */
+        .review-section {
+            background: white;
+        }
+        
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .review-card {
+            background: #f8f9fa;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .review-image {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        
+        .review-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .review-author {
+            font-weight: 700;
+            color: #0F4C81;
+            font-size: 15px;
+        }
+        
+        /* 기업 교육 섹션 */
+        .corporate-section {
+            background: white;
+        }
+        
+        .corporate-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .corporate-text h2 {
+            font-size: 42px;
+            margin-bottom: 25px;
+            color: #0F4C81;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+        
+        .corporate-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        
+        .corporate-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: #0F4C81;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .corporate-clients {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .client-badge {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+            color: #0F4C81;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s;
+        }
+        
+        .client-badge:hover {
+            border-color: #0F4C81;
+            transform: scale(1.05);
+        }
+        
+        /* NARROW DOWN 섹션 */
+        .narrow-section {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            text-align: center;
+            color: #1a1a1a;
+        }
+        
+        .narrow-section .section-title {
+            color: #1a1a1a;
+        }
+        
+        .narrow-section .section-subtitle {
+            color: #2c2c2c;
+        }
+        
+        .urgency-box {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 700px;
+            margin: 40px auto;
+        }
+        
+        .urgency-box h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+        
+        .urgency-box p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .urgency-highlight {
+            background: #FFD700;
+            color: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        /* ACTION 섹션 - 문의 폼 */
+        .action-section {
+            background: linear-gradient(135deg, #0F4C81 0%, #1a5f9e 100%);
+            color: white;
+        }
+        
+        .action-section .section-title {
+            color: white;
+        }
+        
+        .action-section .section-subtitle {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #2c2c2c;
+            font-family: 'Noto Sans KR', sans-serif;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #FFD700;
+            background: white;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-button {
+            width: 100%;
+            padding: 20px;
+            background: #FFD700;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+        }
+        
+        .submit-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .contact-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .contact-item .icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-item h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .contact-item p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .contact-item a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        /* 푸터 */
+        .footer {
+            background: #1a1a1a;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 900;
+            color: #0F4C81;
+            margin-bottom: 20px;
+        }
+        
+        .footer-text {
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        .footer-section h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-section ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #0F4C81;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+            padding-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        /* 애니메이션 */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* 반응형 */
+        @media (max-width: 968px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+            
+            .hero h1 span {
+                font-size: 42px;
+            }
+            
+            .drip-essence-content,
+            .corporate-content,
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .time-items {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 32px;
+            }
+            
+            .contact-form {
+                padding: 35px 25px;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .hero {
+                padding: 120px 20px 60px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero h1 span {
+                font-size: 36px;
+            }
+            
+            .hero-subtitle {
+                font-size: 18px;
+            }
+            
+            .hero-cta-group {
+                flex-direction: column;
+            }
+            
+            .cta-button {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .section {
+                padding: 60px 20px;
+            }
+            
+            .problem-cards,
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* 플로팅 버튼 */
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .floating-button {
+            background: linear-gradient(135deg, #0F4C81 0%, #0a3557 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(15, 76, 129, 0.4);
+            transition: all 0.3s;
+        }
+        
+        .floating-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(15, 76, 129, 0.6);
+        }
+        
+        .floating-button.kakao {
+            background: #FFE812;
+            color: #3c1e1e;
+        }
+        
+        .floating-button.phone {
+            background: #34C759;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 고정 헤더 -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">조상일 커피</div>
+            <a href="tel:031-392-2048" class="header-cta">☎ 상담 문의</a>
+        </div>
+    </header>
+    
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🏆 2023 엘살바도르 핸드드립 챔피언십 준우승</div>
+            <h1>
+                커피 맛이 다 거기서 거기?
+                <span>이제 "시간"으로 커피를 고르세요</span>
+            </h1>
+            <p class="hero-subtitle">
+                12년 경력 국제 대회 수상 바리스타가 만드는<br>
+                당신의 하루를 완성하는 스페셜티 커피
+            </p>
+            <div class="hero-cta-group">
+                <a href="#contact" class="cta-button cta-primary">
+                    📞 무료 상담 받기
+                </a>
+                <a href="#products" class="cta-button cta-secondary">
+                    ☕ 제품 보러가기
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PROBLEM 섹션 -->
+    <section class="section problem-section">
+        <h2 class="section-title">이런 고민, 하고 계시지 않나요?</h2>
+        <p class="section-subtitle">커피 애호가와 카페 창업자들이 가장 많이 겪는 불편함</p>
+        
+        <div class="problem-cards">
+            <div class="problem-card">
+                <div class="problem-icon">🤔</div>
+                <h3>무슨 커피를 마셔야 할지 모르겠어요</h3>
+                <p>산미? 단맛? 쓴맛? 너무 많은 선택지에 결국 익숙한 것만 반복 구매하게 됩니다.</p>
+            </div>
+            
+            <div class="problem-card">
+                <div class="problem-icon">😤</div>
+                <h3>마트 커피는 향이 다 빠져있어요</h3>
+                <p>저렴하게 샀지만 뚜껑 열면 향 하나 없고, 결국 방향제로 쓴 경험 있으시죠?</p>
+            </div>
+            
+            <div class="problem-card">
+                <div class="problem-icon">☕</div>
+                <h3>콜드브루는 뜨겁게 마시면 별로예요</h3>
+                <p>편해서 샀는데 날이 추워져서 데워 마시니 맛이 완전히 달라집니다.</p>
+            </div>
+            
+            <div class="problem-card">
+                <div class="problem-icon">💰</div>
+                <h3>카페 창업, 장비값이 너무 부담돼요</h3>
+                <p>머신 + 그라인더만 천만원. 바리스타 인건비까지 생각하면 본전도 못 찾을 것 같습니다.</p>
+            </div>
+            
+            <div class="problem-card">
+                <div class="problem-icon">😰</div>
+                <h3>매일 출근길 줄 서서 기다리기 싫어요</h3>
+                <p>아침마다 카페 앞 긴 줄... 시간도 돈도 아까운데 대안이 없습니다.</p>
+            </div>
+            
+            <div class="problem-card">
+                <div class="problem-icon">😔</div>
+                <h3>비싼 돈 주고 맛없는 건 정말 싫어요</h3>
+                <p>한 번 실패하면 그 원두 버리기도 아깝고, 억지로 마시기도 힘듭니다.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- AGITATION 섹션 -->
+    <section class="section agitation-section">
+        <div class="agitation-content">
+            <h2 class="section-title">문제는 여기서 끝나지 않습니다</h2>
+            <p class="section-subtitle">커피 한 잔의 선택이 당신의 하루 전체를 좌우합니다</p>
+            
+            <div class="agitation-list">
+                <div class="agitation-item">
+                    <strong>아침에 산미 강한 커피 마셨다가 속 쓰림</strong>
+                    <p>빈 속에 산미 강한 커피는 위장에 자극을 줍니다. 하지만 뭘 선택해야 할지 모르니 그냥 아무거나 마십니다.</p>
+                </div>
+                
+                <div class="agitation-item">
+                    <strong>점심 후 쓴 커피로 졸음이 더 쏟아짐</strong>
+                    <p>오후 집중력이 필요한 시간, 잘못 선택한 커피는 오히려 역효과를 냅니다.</p>
+                </div>
+                
+                <div class="agitation-item">
+                    <strong>저녁에 카페인 때문에 잠 못 이루는 밤</strong>
+                    <p>밤 10시, 하루 마무리하려는데 오후에 마신 커피 때문에 뒤척입니다. 내일 또 피곤한 하루가 시작됩니다.</p>
+                </div>
+                
+                <div class="agitation-item">
+                    <strong>카페 창업했는데 장비 감가상각만 3년</strong>
+                    <p>천만원 들여 산 머신, 월 인건비 300만원. 커피 한 잔 팔아서 남는 게 있을까요?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SOLUTION 섹션 -->
+    <section class="section solution-section">
+        <h2 class="section-title">이제 "시간"으로 커피를 선택하세요</h2>
+        <p class="section-subtitle">12년 경력 국제 수상 바리스타가 찾은 답</p>
+        
+        <div class="solution-intro">
+            <p>
+                <strong>조상일</strong> 바리스타는 12년간 45톤의 커피를 로스팅하며 깨달았습니다.<br>
+                "같은 커피라도 시간대에 따라 최적의 선택이 다르다"는 것을.
+            </p>
+        </div>
+        
+        <!-- 대표님 프로필 -->
+        <div class="profile-section">
+            <img src="images/josangil_profile.jpg" alt="조상일 바리스타" class="profile-image">
+            <h3 class="profile-name">조상일 바리스타</h3>
+            <p class="profile-title">
+                12년 경력 | 국제 대회 준우승 | 대기업 128회 교육<br>
+                2023 엘살바도르 핸드드립 챔피언십 준우승
+            </p>
+        </div>
+        
+        <div class="credentials">
+            <div class="credential-card">
+                <div class="credential-icon">🏆</div>
+                <span class="credential-number">준우승</span>
+                <h3>2023 엘살바도르 챔피언십</h3>
+                <p>핸드드립 부문 세계 2위</p>
+            </div>
+            
+            <div class="credential-card">
+                <div class="credential-icon">🌏</div>
+                <span class="credential-number">6위</span>
+                <h3>아시아커피연맹 대회</h3>
+                <p>프리브루잉 챔피언십</p>
+            </div>
+            
+            <div class="credential-card">
+                <div class="credential-icon">📚</div>
+                <span class="credential-number">128회+</span>
+                <h3>대기업 커피 교육</h3>
+                <p>현대, LG, 케이티 등</p>
+            </div>
+            
+            <div class="credential-card">
+                <div class="credential-icon">⭐</div>
+                <span class="credential-number">99%</span>
+                <h3>고객 만족도</h3>
+                <p>재구매율 70%</p>
+            </div>
+        </div>
+        
+        <!-- 수상 갤러리 -->
+        <div class="award-gallery">
+            <h3>🏆 수상 & 인증 갤러리</h3>
+            <div class="award-images">
+                <img src="images/award_elsalvador.jpg" alt="엘살바도르 대회 수상" class="award-image">
+            </div>
+        </div>
+    </section>
+    
+    <!-- 드립에센스 특별 섹션 -->
+    <section class="drip-essence-section">
+        <div class="drip-essence-content">
+            <div class="drip-essence-text">
+                <h2>🌟 세상에 없던 기술</h2>
+                <h3>드립에센스</h3>
+                <p>
+                    핸드드립을 <strong>4배 농축</strong>한 조상일 커피만의 독자 개발 기술.
+                    엘살바도르 챔피언십 준우승 바리스타의 손길이 담긴 프리미엄 커피 원액입니다.
+                </p>
+                
+                <div class="drip-essence-features">
+                    <div class="drip-feature">
+                        <strong>⚡ 10초 완성</strong>
+                        물만 부으면 끝. 머신도, 그라인더도, 바리스타도 필요 없습니다.
+                    </div>
+                    
+                    <div class="drip-feature">
+                        <strong>💰 천만원 절약</strong>
+                        머신 + 그라인더 + 인건비 = 제로. 드립에센스 하나면 됩니다.
+                    </div>
+                    
+                    <div class="drip-feature">
+                        <strong>☕ 콜드브루보다 진하고</strong>
+                        뜨겁게 마셔도 향과 맛이 살아있는 진짜 핸드드립입니다.
+                    </div>
+                    
+                    <div class="drip-feature">
+                        <strong>🥛 라떼도 가능</strong>
+                        우유를 부으면 카페라떼, 위스키를 넣으면 아이리시 커피까지.
+                    </div>
+                </div>
+                
+                <p style="margin-top: 30px; font-size: 20px; font-weight: 700; color: #FFD700;">
+                    한 잔당 2,000원, 카페 가격의 1/3
+                </p>
+            </div>
+            
+            <div>
+                <img src="images/product_essence_01.jpg" alt="드립에센스" class="drip-essence-image">
+                
+                <div class="time-philosophy">
+                    <h4>☀️ 시간 철학이 담긴 커피</h4>
+                    <div class="time-items">
+                        <div class="time-item">
+                            <div class="time-icon">🌅</div>
+                            <div class="time-label">아침</div>
+                            <div class="time-name">모닝 제스트</div>
+                        </div>
+                        
+                        <div class="time-item">
+                            <div class="time-icon">☀️</div>
+                            <div class="time-label">점심</div>
+                            <div class="time-name">미드데이 하모니</div>
+                        </div>
+                        
+                        <div class="time-item">
+                            <div class="time-icon">🌤️</div>
+                            <div class="time-label">오후</div>
+                            <div class="time-name">에프터눈 볼드</div>
+                        </div>
+                        
+                        <div class="time-item">
+                            <div class="time-icon">🌙</div>
+                            <div class="time-label">저녁</div>
+                            <div class="time-name">트와일라잇 엠버</div>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: 25px; text-align: center; font-size: 16px; line-height: 1.6;">
+                        더 이상 "무슨 커피?"고민하지 마세요.<br>
+                        지금 이 시간에 맞는 커피를 선택하면 됩니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- OFFER 섹션 -->
+    <section id="products" class="section offer-section">
+        <h2 class="section-title">당신을 위한 완벽한 선택</h2>
+        <p class="section-subtitle">초보자부터 카페 창업자까지, 모두를 위한 라인업</p>
+        
+        <div class="product-grid">
+            <!-- 원두 커피 -->
+            <div class="product-card">
+                <div class="product-badge">BEST</div>
+                <img src="images/product_beans_01.jpg" alt="스페셜티 원두" class="product-image">
+                <h3>스페셜티 원두</h3>
+                <div class="price">
+                    <strong>13,900원~</strong> / 200g
+                </div>
+                
+                <ul class="product-features">
+                    <li>매주 신선하게 로스팅</li>
+                    <li>스페셜티 등급, 핸드픽 선별</li>
+                    <li>시간별 맞춤 블렌딩</li>
+                    <li>440만원 디팅 그라인더 사용</li>
+                    <li>산미/단맛/쓴맛/디카페인</li>
+                    <li>200g / 500g / 1kg 선택</li>
+                </ul>
+                
+                <a href="#contact" class="product-button">상담 신청하기</a>
+            </div>
+            
+            <!-- 드립백 -->
+            <div class="product-card">
+                <div class="product-badge">신선함 1위</div>
+                <img src="images/product_dripbag_01.jpg" alt="20g 대용량 드립백" class="product-image">
+                <h3>20g 대용량 드립백</h3>
+                <div class="price">
+                    <strong>16,000원~</strong> / 10개
+                </div>
+                
+                <ul class="product-features">
+                    <li>국내 최초 20g 대용량</li>
+                    <li>산소흡수제+가스제거제 복합</li>
+                    <li>갓 볶은 원두로 수작업 제조</li>
+                    <li>카페 핸드드립 수준의 향</li>
+                    <li>어디서든 간편하게</li>
+                    <li>12g / 20g 선택 가능</li>
+                </ul>
+                
+                <a href="#contact" class="product-button">상담 신청하기</a>
+            </div>
+            
+            <!-- 드립에센스 -->
+            <div class="product-card">
+                <div class="product-badge">혁신 기술</div>
+                <img src="images/product_essence_01.jpg" alt="드립에센스" class="product-image">
+                <h3>드립에센스 (농축액)</h3>
+                <div class="price">
+                    <strong>10,000원~</strong> / 200ml
+                </div>
+                
+                <ul class="product-features">
+                    <li>세상에 없는 독자 기술</li>
+                    <li>4배 농축 핸드드립</li>
+                    <li>10초 만에 완성</li>
+                    <li>머신 없이 카페 운영 가능</li>
+                    <li>라떼, 위스키 믹스 가능</li>
+                    <li>200ml / 500ml / 1L</li>
+                </ul>
+                
+                <a href="#contact" class="product-button">상담 신청하기</a>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <p style="font-size: 20px; color: #0F4C81; font-weight: 700; margin-bottom: 15px;">
+                🎁 첫 구매 10% 할인 + 드립백 샘플 증정
+            </p>
+            <p style="font-size: 16px; color: #666;">
+                네이버 스마트스토어 사진 리뷰 작성 시 500원 추가 적립
+            </p>
+        </div>
+    </section>
+    
+    <!-- 고객 후기 섹션 -->
+    <section class="section review-section">
+        <h2 class="section-title">⭐ 고객들의 진짜 반응</h2>
+        <p class="section-subtitle">만족도 99%, 재구매율 70%의 비결</p>
+        
+        <div class="review-grid">
+            <div class="review-card">
+                <img src="images/review_01.jpg" alt="고객 후기" class="review-image">
+                <p class="review-text">
+                    "늘 신선한 커피를 받을 수 있어서 좋아요. 여기는 진짜 향이 달라요!"
+                </p>
+                <p class="review-author">- 김OO 고객님</p>
+            </div>
+            
+            <div class="review-card">
+                <p class="review-text" style="padding-top: 20px;">
+                    "드립에센스는 처음 들어봤는데 콜드브루랑 확실히 달라요! 간편하면서도 맛있어요."
+                </p>
+                <p class="review-author">- 이OO 고객님</p>
+            </div>
+            
+            <div class="review-card">
+                <p class="review-text" style="padding-top: 20px;">
+                    "챔피언의 커피는 확실히 맛있네요! 상일이형 커피 너무 잘해요."
+                </p>
+                <p class="review-author">- 박OO 고객님</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 기업 교육 섹션 -->
+    <section class="section corporate-section">
+        <div class="corporate-content">
+            <div class="corporate-text">
+                <h2>대한민국 최고 기업들이<br>선택한 커피 교육</h2>
+                <p>
+                    현대케피코, LG CNS, LG에너지솔루션 등<br>
+                    대기업 임직원 대상 커피 교육 128회 이상 진행
+                </p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">12년</span>
+                        <span class="stat-label">전문 경력</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">45톤</span>
+                        <span class="stat-label">로스팅 경험</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">1만+</span>
+                        <span class="stat-label">누적 고객</span>
+                    </div>
+                </div>
+                
+                <p style="font-size: 17px; line-height: 1.8; color: #555; margin-top: 20px;">
+                    커피에 대한 깊은 이해를 바탕으로<br>
+                    로스팅, 핸드드립, 커피 강의까지<br>
+                    <strong style="color: #0F4C81;">커피의 모든 것을 아는 전문가</strong>입니다.
+                </p>
+            </div>
+            
+            <div>
+                <img src="images/education_hyundai.jpg" alt="기업 교육 현장" class="corporate-image">
+                <div class="corporate-clients">
+                    <div class="client-badge">현대 케피코</div>
+                    <div class="client-badge">LG CNS</div>
+                    <div class="client-badge">LG 에너지솔루션</div>
+                    <div class="client-badge">KT</div>
+                    <div class="client-badge">카루나힐링</div>
+                    <div class="client-badge">기타 128회+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NARROW DOWN 섹션 -->
+    <section class="section narrow-section">
+        <h2 class="section-title">⚠️ 지금 결정하셔야 하는 이유</h2>
+        <p class="section-subtitle">한정된 생산량, 누구나 받을 수 없습니다</p>
+        
+        <div class="urgency-box">
+            <h3>🔥 하루 생산량 제한</h3>
+            <p>
+                <strong>드립에센스</strong>는 수작업으로만 제조 가능합니다.<br>
+                하루 생산량이 정해져 있어 납품 대기가 발생할 수 있습니다.
+            </p>
+            <p style="margin-top: 20px;">
+                <strong>20g 드립백</strong> 역시 핸드픽 선별 후<br>
+                갓 볶은 원두로 당일 수작업 제조하기 때문에<br>
+                대량 주문 시 시간이 소요됩니다.
+            </p>
+            
+            <div class="urgency-highlight">
+                💡 빠른 상담 = 빠른 납품<br>
+                지금 문의하시면 우선 배정해드립니다
+            </div>
+        </div>
+    </section>
+    
+    <!-- ACTION 섹션 - 문의 폼 -->
+    <section id="contact" class="section action-section">
+        <h2 class="section-title">☎️ 무료 상담 신청</h2>
+        <p class="section-subtitle">
+            1:1 맞춤 상담으로 최적의 커피를 추천해드립니다<br>
+            상담 & 견적 완전 무료
+        </p>
+        
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">이름 *</label>
+                <input type="text" id="name" name="name" required placeholder="이름을 입력하세요">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">연락처 *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="010-0000-0000">
+            </div>
+            
+            <div class="form-group">
+                <label for="interest">관심 제품 *</label>
+                <select id="interest" name="interest" required>
+                    <option value="">선택해주세요</option>
+                    <option value="원두">스페셜티 원두</option>
+                    <option value="드립백">20g 대용량 드립백</option>
+                    <option value="드립에센스">드립에센스 (농축액)</option>
+                    <option value="기업납품">기업/카페 납품</option>
+                    <option value="커피교육">커피 교육</option>
+                    <option value="기타">기타 문의</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">문의 내용</label>
+                <textarea id="message" name="message" placeholder="궁금하신 점을 자유롭게 작성해주세요"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-button">
+                📞 상담 신청하기
+            </button>
+        </form>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="icon">📞</div>
+                <h4>전화 상담</h4>
+                <p><a href="tel:031-392-2048">031-392-2048</a></p>
+                <p style="font-size: 14px; margin-top: 8px;">평일 10:00 - 17:00</p>
+            </div>
+            
+            <div class="contact-item">
+                <div class="icon">💬</div>
+                <h4>카카오톡</h4>
+                <p><a href="http://pf.kakao.com/_xmGaIn" target="_blank">조상일커피 본점</a></p>
+                <p style="font-size: 14px; margin-top: 8px;">24시간 메시지 가능</p>
+            </div>
+            
+            <div class="contact-item">
+                <div class="icon">📍</div>
+                <h4>방문 상담</h4>
+                <p>군포시 산본천로214번길 30</p>
+                <p style="font-size: 14px; margin-top: 8px;">2층 조상일커피</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">조상일 커피</div>
+                <p class="footer-text">
+                    12년 경력 국제 대회 수상 바리스타가 직접 만드는<br>
+                    프리미엄 스페셜티 커피<br><br>
+                    
+                    <strong>원두 상점:</strong> 경기도 군포시 산본천로214번길 30, 2층<br>
+                    <strong>카페 본점:</strong> 경기도 군포시 고산로 185번길 4, 1층<br>
+                    <strong>대표:</strong> 조상일<br>
+                    <strong>전화:</strong> 031-392-2048
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>바로가기</h4>
+                <ul>
+                    <li><a href="#products">제품 소개</a></li>
+                    <li><a href="#contact">문의하기</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>고객센터</h4>
+                <ul>
+                    <li><a href="tel:031-392-2048">031-392-2048</a></li>
+                    <li>평일 10:00 - 17:00</li>
+                    <li><a href="http://pf.kakao.com/_xmGaIn" target="_blank">카카오톡 문의</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 조상일 커피. All Rights Reserved.</p>
+            <p style="margin-top: 10px; font-size: 12px; color: rgba(255,255,255,0.5);">
+                본 페이지는 브랜드포유(brandforyou.kr) 스피드랜딩 서비스로 제작되었습니다.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- 플로팅 버튼 -->
+    <div class="floating-cta">
+        <a href="http://pf.kakao.com/_xmGaIn" target="_blank" class="floating-button kakao" title="카카오톡 상담">
+            💬
+        </a>
+        <a href="tel:031-392-2048" class="floating-button phone" title="전화 상담">
+            📞
+        </a>
+    </div>
+    
+    <script>
+        // 구글 스프레드시트 연동
+        const SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+        
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('.submit-button');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = '전송 중...';
+            submitButton.disabled = true;
+            
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                phone: formData.get('phone'),
+                interest: formData.get('interest'),
+                message: formData.get('message'),
+                timestamp: new Date().toLocaleString('ko-KR')
+            };
+            
+            try {
+                // 구글 스프레드시트로 전송
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                alert('✅ 상담 신청이 완료되었습니다!\n\n빠른 시간 내에 연락드리겠습니다.\n감사합니다. 😊');
+                this.reset();
+                
+            } catch (error) {
+                console.error('Error:', error);
+                // 실패 시 전화 연결
+                if(confirm('전송 중 오류가 발생했습니다.\n\n바로 전화 연결하시겠습니까?')) {
+                    window.location.href = 'tel:031-392-2048';
+                }
+            } finally {
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }
+        });
+        
+        // 부드러운 스크롤
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // 스크롤 애니메이션
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.problem-card, .credential-card, .product-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
